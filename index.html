@@ -10,29 +10,56 @@
       background-color: #000;
       color: #e6e6e6;
       font-family: Arial, sans-serif;
-      text-align: center;
       padding: 20px;
       line-height: 1.6;
     }
 
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
     img {
-      width: 250px;
-      height: 250px;
+      width: 230px;
+      height: 230px;
       object-fit: cover;
       border-radius: 50%;
       border: 3px solid #00bfff;
-      margin-bottom: 20px;
     }
 
     h1 {
       color: #00bfff;
-      margin-bottom: 10px;
+      margin: 0;
       font-size: 32px;
+    }
+
+    .resume-box {
+      margin-top: 20px;
+      background-color: #111;
+      padding: 15px;
+      border: 1px solid #00bfff;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .resume-box a {
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     p {
       max-width: 700px;
-      margin: auto;
+      margin: 20px auto;
+      text-align: center;
       font-size: 16px;
       color: #cccccc;
     }
@@ -52,17 +79,29 @@
 
 <body>
 
-  <img src="https://github.com/pateldaxgirishbhai-hub/Dax.github.io/blob/main/IMG-20250718-WA0037.jpg?raw=true" alt="Dax Patel">
+  <!-- Profile section (picture + name right side) -->
+  <div class="container">
+    <img src="https://github.com/pateldaxgirishbhai-hub/Dax.github.io/blob/main/IMG-20250718-WA0037.jpg?raw=true" alt="Dax Patel">
 
-  <h1>Dax Patel</h1>
+    <div>
+      <h1>DAX PATEL</h1>
+      <p>Welcome to my portfolio!</p>
+    </div>
+  </div>
 
-  <p>Welcome to my portfolio!</p>
-
+  <!-- Description paragraph -->
   <p>
     I am pursuing a Master’s degree in Cloud Computing at the University of East London, developing advanced skills in cloud architecture, scalable systems, and innovative IT solutions. Passionate about leveraging cloud technologies to solve complex challenges, I aim to design secure, efficient, and impactful digital solutions that drive transformation and innovation.
   </p>
 
-  <p>
+  <!-- Resume box -->
+  <div class="resume-box">
+    <!-- Replace YOUR_RESUME_LINK with the link to your resume PDF -->
+    <a href="YOUR_RESUME_LINK" download>📄 Download My Resume</a>
+  </div>
+
+  <!-- Social links -->
+  <p style="text-align:center;">
     <a href="https://github.com/pateldaxgirishbhai-hub" target="_blank">GitHub</a> |
     <a href="https://www.linkedin.com/in/daxbhaipatel3010" target="_blank">LinkedIn</a> |
     <a href="mailto:pateldaxgirishbhai@gmail.com">Contact Me</a>
@@ -70,3 +109,4 @@
 
 </body>
 </html>
+
